@@ -9,8 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        firstSectionBg: "#fdf7f1",
+        navBtnBg: "#b9e1d7",
+        btnHover: "#ee6451",
+      },
+      fontFamily: {
+        formularBlack: "var(--formular-black)",
+        formularItalic: "var(--formular-italic)",
+        formularLight: "var(--formular-light)",
+        formularLightItalic: "var(--formular-light-italic)",
+        formularMedium: "var(--formular-medium)",
+        mdi: "var(--mdi)",
+        formularThin: "var(--formular-thin)",
+        formular: "var(--formular)",
       },
     },
   },

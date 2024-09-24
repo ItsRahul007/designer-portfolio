@@ -1,16 +1,49 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "remixicon/fonts/remixicon.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const formularBlack = localFont({
+  src: "./fonts/Formular-Black.woff2",
+  variable: "--formular-black",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const formularItalic = localFont({
+  src: "./fonts/Formular-Italic.woff2",
+  variable: "--formular-italic",
+});
+
+const formularLight = localFont({
+  src: "./fonts/Formular-Light.woff2",
+  variable: "--formular-light",
+  display: "swap",
+  weight: "400",
+  style: "normal",
+});
+
+const formularLightItalic = localFont({
+  src: "./fonts/Formular-LightItalic.woff2",
+  variable: "--formular-light-italic",
+});
+
+const formularMedium = localFont({
+  src: "./fonts/Formular-Medium.woff2",
+  variable: "--formular-medium",
+});
+
+const formularThin = localFont({
+  src: "./fonts/Formular-Thin.woff",
+  variable: "--formular-thin",
+});
+
+const mdi = localFont({
+  src: "./fonts/mdi.woff2",
+  variable: "--mdi",
+});
+
+const formular = localFont({
+  src: "./fonts/Formular.woff2",
+  variable: "--formular",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +59,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${formularBlack.variable} ${formularItalic.variable} 
+          ${formularLight.variable} ${formularLightItalic.variable} 
+          ${formularMedium.variable} ${mdi.variable} ${formularThin.variable} ${formular.variable} antialiased bg-firstSectionBg
+        `}
       >
         {children}
       </body>
