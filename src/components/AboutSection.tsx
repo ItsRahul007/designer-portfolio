@@ -4,7 +4,10 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="h-[750px] w-full bg-[#ffffff] flex overflow-hidden">
+    <section
+      className="h-[750px] w-full bg-[#ffffff] flex overflow-hidden"
+      id="about"
+    >
       <div className="h-full w-2/5 flex items-center relative z-0">
         {/* image */}
         <div className="relative w-[424px] h-[491px] ml-44 before:absolute before:content-[''] before:w-[11.75rem] before:h-[11.75rem] before:bg-[#fdf7f1] before:top-0 before:left-0 before:-translate-y-2/4 before:-translate-x-2/4">
