@@ -92,4 +92,12 @@ export const testingOptions = [
     keyLabel: "f(x)",
     params: ["a", "b"],
   },
+  {
+    value: "AD",
+    label: "Ad",
+    type: "dimension",
+    keyLabel: "dim",
+    key: "ad",
+    helper: "Account ad",
+  },
 ];

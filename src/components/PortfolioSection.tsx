@@ -2,45 +2,7 @@
 
 import React, { useState } from "react";
 import ImageComponent from "./ImageComponent";
-
-interface I_ImageComponent {
-  src: string;
-  alt: string;
-  tags: string[];
-}
-
-const portfolioOptions: I_ImageComponent[] = [
-  {
-    src: "/images/portfolio-imgs/donut.jpg",
-    alt: "donut country",
-    tags: ["design", "branding"],
-  },
-  {
-    src: "/images/portfolio-imgs/furni.jpg",
-    alt: "furni",
-    tags: ["design"],
-  },
-  {
-    src: "/images/portfolio-imgs/udesign.jpg",
-    alt: "udesign",
-    tags: ["design", "branding", "logo"],
-  },
-  {
-    src: "/images/portfolio-imgs/proknife.jpg",
-    alt: "proknife",
-    tags: ["design"],
-  },
-  {
-    src: "/images/portfolio-imgs/flora.jpg",
-    alt: "flora paradise",
-    tags: ["design", "branding"],
-  },
-  {
-    src: "/images/portfolio-imgs/poultrix.jpg",
-    alt: "poultrix",
-    tags: ["design"],
-  },
-];
+import { portfolioOptions } from "@/utils/staticDatas";
 
 const PortfolioSection = () => {
   const [componentPosition, setComponentPosition] = useState<number>(0);

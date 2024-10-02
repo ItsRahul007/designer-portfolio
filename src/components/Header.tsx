@@ -1,31 +1,9 @@
 "use client";
 
 import { classNames } from "@/utils/classnames";
+import { navList } from "@/utils/staticDatas";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-
-const navList = [
-  {
-    label: "About me",
-    link: "#",
-  },
-  {
-    label: "Portfolio",
-    link: "#",
-  },
-  {
-    label: "Testimonials",
-    link: "#",
-  },
-  {
-    label: "Contact",
-    link: "#",
-  },
-  {
-    label: "Blog",
-    link: "#",
-  },
-];
 
 const Header = () => {
   const [isClickedBtn, setIsClickedBtn] = useState<boolean>(false);

@@ -63,7 +63,6 @@ const Expression: FC<ExpressionRootPropTypes> = ({
   const handleKeyDown = (e: React.KeyboardEvent<HTMLSpanElement>) => {
     e.stopPropagation();
     switch (e.key) {
-      case "Backspace":
       case "Delete":
         if (rootFocus) {
           setExp(false);

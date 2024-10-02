@@ -124,6 +124,7 @@ const DropdownCombobox: React.FC<SelectorPropTypes> = ({
               }
               key={`${item.key}${index}`}
               {...getItemProps({ item, index })}
+              className="py-1 px-2"
             >
               <span>{item.label}</span>
             </li>

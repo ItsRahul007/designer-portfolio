@@ -5,8 +5,8 @@ import AdvaticeSection from "@/components/AdvaticeSection";
 import FirstSection from "@/components/FirstSection";
 import Header from "@/components/Header";
 import PortfolioSection from "@/components/PortfolioSection";
+import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Home() {
@@ -17,9 +17,9 @@ export default function Home() {
       <AboutSection />
       <AdvaticeSection />
       <PortfolioSection />
+      <Testimonials />
 
-      <section className="h-[650px] w-full bg-white">hi hello</section>
-      {/* <section className="h-[650px] w-full bg-firstSectionBg">hi hello</section> */}
+      <section className="h-[650px] w-full bg-firstSectionBg">hi hello</section>
       {/* <section className="h-[650px] w-full bg-firstSectionBg">hi hello</section> */}
       {/* <section className="h-[650px] w-full bg-firstSectionBg">hi hello</section> */}
     </main>
