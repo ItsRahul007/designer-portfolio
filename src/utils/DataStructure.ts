@@ -34,7 +34,6 @@ export class EditorState {
     if (node.value.type === "fn") {
       let str = "";
       let label = node.value.data.label || "";
-      console.log(node.value);
       const childExpressions = node.children
         .map((child) => this.buildExpression(child))
         .filter(Boolean);

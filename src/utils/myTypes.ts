@@ -9,3 +9,9 @@ export interface I_ImageComponent {
   alt: string;
   tags: string[];
 }
+
+export interface I_InputWithLabel {
+  label: string;
+  placeholder: string;
+  type?: string;
+}

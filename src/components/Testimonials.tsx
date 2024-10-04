@@ -44,7 +44,7 @@ const Testimonials = () => {
               onTransitionEnd={() => setIsTransitioning(false)}
             >
               {myClients.map((obj) => (
-                <ReviewComponent {...obj} key={obj.image} />
+                <ReviewComponent key={obj.image} {...obj} />
               ))}
             </div>
           </div>
@@ -78,11 +78,12 @@ const Testimonials = () => {
             fully trust their opinions on my solutions.
           </p>
           <div className="w-full grid grid-cols-3 grid-rows-2 gap-y-5 gap-x-4">
-            {brandImgs.map((url) => (
+            {brandImgs.map((url, i) => (
               <img
                 src={url}
                 alt="brands"
                 className="h-auto w-auto aspect-auto object-contain col-span-1 row-span-1 mx-auto"
+                key={url + i}
               />
             ))}
           </div>

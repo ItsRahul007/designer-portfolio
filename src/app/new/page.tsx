@@ -43,6 +43,15 @@ const Page: FC = () => {
 
   return (
     <div className="p-5">
+      <div className="mb-4 flex gap-2">
+        <label>Target Parameter</label>
+        <select>
+          {Array.from({ length: 5 }).map((_, i) => (
+            <option key={"option " + i}>Option {i + 1}</option>
+          ))}
+        </select>
+      </div>
+
       <Dropdown
         onChangeFn={onChangeFn}
         expressionRootClass={expressionRootClass}

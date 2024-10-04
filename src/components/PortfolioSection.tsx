@@ -64,7 +64,7 @@ const PortfolioSection = () => {
             }}
           >
             {portfolioOptions.map(({ alt, src, tags }) => (
-              <ImageComponent src={src} alt={alt} tags={tags} />
+              <ImageComponent key={src + alt} src={src} alt={alt} tags={tags} />
             ))}
           </div>
         </div>

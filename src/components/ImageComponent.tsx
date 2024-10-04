@@ -24,7 +24,10 @@ const ImageComponent: React.FC<I_ImageComponent> = ({ src, alt, tags }) => {
         />
         <div className="absolute flex gap-2 top-4 left-4">
           {tags.map((str) => (
-            <div className="px-2 py-1 bg-white hover:bg-btnHover hover:text-white duration-300 cursor-pointer capitalize">
+            <div
+              className="px-2 py-1 bg-white hover:bg-btnHover hover:text-white duration-300 cursor-pointer capitalize"
+              key={str + alt}
+            >
               {str}
             </div>
           ))}
