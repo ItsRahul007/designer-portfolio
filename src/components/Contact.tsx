@@ -19,7 +19,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-full h-2/4" />
-      <form className="w-3/4 h-3/5 absolute bg-white bottom-28 shadow-md flex flex-col py-8 px-6">
+      <form className="w-3/4 h-3/5 absolute bg-white bottom-28 shadow-2xl flex flex-col py-8 px-6">
         <div className="grid grid-cols-3 gap-x-5">
           <InputWithLabel label="Your Name" placeholder="Your name" />
           <InputWithLabel

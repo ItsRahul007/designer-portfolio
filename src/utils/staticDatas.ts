@@ -1,4 +1,4 @@
-import { I_ImageComponent, T_Reviews } from "./myTypes";
+import { I_ImageComponent, I_MyBlog, T_Reviews } from "./myTypes";
 
 export const navList = [
   {
@@ -84,4 +84,28 @@ export const brandImgs = [
   "/images/brands/monstorid.png",
   "/images/brands/roxxe.png",
   "/images/brands/lintense.png",
+];
+
+export const blogArr: I_MyBlog[] = [
+  {
+    date: "April 25, 2020",
+    header: "Why Are All Sites Optimizing For Smartphones?",
+    paragraph:
+      "Sites were developed for desktop devices at first but as the worldwide smartphone usage rate increased so did the site developers look for...",
+    image: "/images/blog-imgs/apple.jpg",
+  },
+  {
+    date: "April 25, 2020",
+    header: "How to Start Promoting Your Own Blog",
+    paragraph:
+      "Promoting your blog is sometimes more difficult than creating it at all. But it is still wholly possible without paid advertisement or being a celebrity...",
+    image: "/images/blog-imgs/bulb.jpg",
+  },
+  {
+    date: "April 25, 2020",
+    header: "25 Steps to Make Sure that Your Website is Pleasant to Use",
+    paragraph:
+      "Using the internet means browsing various websites for important information. Or, if you’re one of those people who like to browse YouTube...",
+    image: "/images/blog-imgs/flower.jpg",
+  },
 ];

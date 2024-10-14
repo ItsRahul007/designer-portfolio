@@ -15,3 +15,10 @@ export interface I_InputWithLabel {
   placeholder: string;
   type?: string;
 }
+
+export interface I_MyBlog {
+  date: string;
+  header: string;
+  paragraph: string;
+  image: string;
+}

@@ -2,13 +2,14 @@
 
 import AboutSection from "@/components/AboutSection";
 import AdvaticeSection from "@/components/AdvaticeSection";
+import BlogSection from "@/components/BlogSection";
 import Contact from "@/components/Contact";
 import FirstSection from "@/components/FirstSection";
+import FooterSection from "@/components/FooterSection";
 import Header from "@/components/Header";
 import PortfolioSection from "@/components/PortfolioSection";
 import Testimonials from "@/components/Testimonials";
-import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 export default function Home() {
   return (
@@ -20,9 +21,8 @@ export default function Home() {
       <PortfolioSection />
       <Testimonials />
       <Contact />
-
-      <section className="h-[650px] w-full bg-black">hi hello</section>
-      {/* <section className="h-[650px] w-full bg-firstSectionBg">hi hello</section> */}
+      <BlogSection />
+      <FooterSection />
     </main>
   );
 }
